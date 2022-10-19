@@ -1,0 +1,17 @@
+# Dependency directory
+node_modules
+
+# ignore .lock
+yarn.lock
+package.lock
+pnpm-lock.yaml
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+## Secret
+.env
+
+# Build, Output
+build
