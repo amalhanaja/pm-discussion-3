@@ -1,8 +1,11 @@
-<script setup lang="ts">
-</script>
+<script setup lang="ts"></script>
 
 <template>
-  <div>Halaman Awal</div>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
 </template>
 
-<style scoped></style>
+<style scoped>
+
+</style>
