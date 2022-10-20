@@ -17,13 +17,12 @@ const mahasiswaController: MahasiswaController = new MahasiswaControllerImpl(
 const mahasiswaRouter: MahasiswaRouter = new MahasiswaRouter(
   mahasiswaController
 );
-
+app.use(express.json());
+app.use(cors());
 app.use(mahasiswaRouter.router);
 app.get("/", (_: Request, res: Response) => {
   res.send("Alfian Akmal Hanantio");
 });
-app.use(express.json);
-app.use(cors());
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at http://localhost:${port}`);
 });
