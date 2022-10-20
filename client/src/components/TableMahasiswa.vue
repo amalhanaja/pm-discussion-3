@@ -30,7 +30,7 @@ defineProps<Props>();
         class="table-item border border-slate-600"
       >
         <td class="text-center">{{ x + 1 }}</td>
-        <td>{{ row.name }}</td>
+        <td class="text-start">{{ row.name }}</td>
         <td class="text-center">{{ row.class }}</td>
         <td class="text-center">{{ row.score }}</td>
       </tr>
@@ -46,7 +46,6 @@ th {
   padding-bottom: 0.5rem;
 }
 td {
-  text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 0.375rem;
